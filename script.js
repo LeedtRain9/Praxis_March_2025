@@ -42,6 +42,14 @@ const questions = {
             answers: ["Ja. Im Kurzschlussfall löst der Automat sicher aus.", "Nein. Der Fehlerstrom wäre zu niedrig.", "Ja, der Fehlerstrom wäre zu niedrig"], 
             correct: [1] 
         },
+
+        {
+            type: "textWithImage", // Neuer Aufgabentyp
+            question: "Wovor schützt diese Schutzeinrichtung?",
+            image: "Bilder Elektroinstallation/bild28.jpg", // Bild-URL
+            answers: ["Vor Überlast.", "Vor Überspannung.", "Vor Kurzschluss."],
+            correct: [0, 1] // Index der korrekten Antwort
+        },
                 
         { 
             type: "text",
@@ -145,6 +153,14 @@ const questions = {
             answers: ["Verlegeart C", "Verlegeart B1", "Verlegeart E"], 
             correct: [2] 
         },
+        
+        {
+            type: "textWithImage", // Neuer Aufgabentyp
+            question: "Wovor schützt diese Schutzeinrichtung?",
+            image: "Bilder Elektroinstallation/bild29.jpg", // Bild-URL
+            answers: ["Vor Kurzschluss.", "Vor Erdschlussfehlern.", "Vor Unterspannung."],
+            correct: [0, 1] // Index der korrekten Antwort
+        },
 
         { 
             type: "text",
@@ -152,6 +168,7 @@ const questions = {
             answers: ["14,5 A", "23 A", "21 A"], 
             correct: [1] 
         },
+        
         {
             type: "textWithImage", // Neuer Aufgabentyp
             question: "Dieser Anschluss ist ...",
@@ -210,7 +227,14 @@ const questions = {
             images: ["Bilder Elektroinstallation/bild25.jpg", "Bilder Elektroinstallation/bild26.jpg", "Bilder Elektroinstallation/bild27.jpg"], 
             correct: [1] 
         },
-
+        
+        { 
+            type: "text",
+            question: "Dürfen fein- und feinstdrähtige Leiter auch ohne Aderendhülse punktuell verschraubt werden?", 
+            answers: ["Ja, wenn das Drehmoment nicht zu groß ist.", "Ja, diese Methode ist immer noch zulässig.", "Nein, definitiv nicht."], 
+            correct: [2] 
+        },
+        
         {
             type: "textWithImage", // Neuer Aufgabentyp
             question: "Diese Arbeitsprobe ...",
@@ -233,7 +257,13 @@ const questions = {
             answers: ["hat nichts mit der Wirklichkeit zu tun.", "hat definitiv bestanden."],
             correct: [1] // Index der korrekten Antwort
         },
-
+        
+        { 
+            type: "text",
+            question: "Was muss vor jeder Verwendung eines Messgerätes getan werden?", 
+            answers: ["Überprüfung auf Schäden.", "Überprüfung auf Schäden, Eignung und Funktion.", "Überprüfung auf Eignung."], 
+            correct: [1] 
+        },
         {
             type: "textWithImage", // Neuer Aufgabentyp
             question: "Die Verdrahtung des Schalters ...",
@@ -256,7 +286,13 @@ const questions = {
             answers: ["für den minimalen und maximalen Querschnitt des Leiters.", "für den minimalen und maximalen Durchmesser des Leiters.", "für die minimale und maximale Abisolierlänge des Leiters."],
             correct: [1] // Index der korrekten Antwort
         },
-
+        
+        { 
+            type: "text",
+            question: "Was passiert, wenn ich bei einem Multimeter V DC statt V AC einstelle und an einer aktiven Steckdose messe?", 
+            answers: ["Das Gerät zeigt 0 V an.", "Das Gerät zeigt 230 V an.", "Die Gerätesicherung im Messgerät löst aus."], 
+            correct: [0] 
+        },
         {
             type: "textWithImage", // Neuer Aufgabentyp
             question: "Die Verdrahtung des Schalters ...",
@@ -271,13 +307,26 @@ const questions = {
             answers: ["Für SK 2 gilt eine maximale Betriebsspannung von 120 V DC.", "Bei SK 2 muss ein PE angeschlossen werden.", "SK 2 besitzt eine doppelte oder verstärkte Isolierung."], 
             correct: [2] 
         },
-
+        
+        { 
+            type: "text",
+            question: "Was passiert, wenn ich bei einem Multimeter A DC statt A AC einstelle und an einer aktiven Steckdose messe?", 
+            answers: ["Das Gerät zeigt 0 V an.", "Das Gerät zeigt 230 V an.", "Die Gerätesicherung im Messgerät löst aus."], 
+            correct: [2] 
+        },
         {
             type: "textWithImage", // Neuer Aufgabentyp
             question: "Die Verdrahtung der Leuchte hat einen Schönheitsfehler:",
             image: "Bilder Elektroinstallation/bild16.jpg", // Bild-URL
             answers: ["der Schutzleiter ist zu lang.", "der Schutzleiter ist zu kurz."],
             correct: [1] // Index der korrekten Antwort
+        },
+        
+        { 
+            type: "text",
+            question: "Ein FI (RCD) umfasst im Neubau sechs Stromkreise, die mit LS-Schaltern abgesichert sind. Plötzlich tritt ein Erdschluss auf. Wie könnte theoretisch der Fehler relativ einfach gefunden werden?", 
+            answers: ["Alle N-Leiter in der UV abklemmen, RCD einschalten und sukzessive N-Leiter anklemmen, bis FI wieder auslöst.", "Alle Phasen abklemmen, RCD wieder einschalten und Phasen sukzessive wieder anklemmen, bis der FI wieder auslöst."], 
+            correct: [0] 
         },
 
     ],
