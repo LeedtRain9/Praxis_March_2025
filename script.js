@@ -348,10 +348,173 @@ const questions = {
             answers: ["Alle N-Leiter in der UV abklemmen, RCD einschalten und sukzessive N-Leiter anklemmen, bis FI wieder auslöst.", "Alle Phasen abklemmen, RCD wieder einschalten und Phasen sukzessive wieder anklemmen, bis der FI wieder auslöst."], 
             correct: [0] 
         },
+],
 
-    ],
+Allgemeines: [
 
-Schützschaltung: []
+        { question: "Wie ist das Elektron geladen ?", answers: ["positiv", "gar nicht", "neutral", "negativ"], correct: 3 },
+
+        { question: "Welche Ladungen sind für den Stromfluss in einem metallischen Leiter verantwortlich ?", answers: ["Neutronen", "Elektronen", "Protonen", "Positronen"], correct: 1 },
+ 
+        { question: "Welche Aussage verdeutlicht den elektrischem Strom sinngemäß ?", answers: ["Eine Flüssigkeit im Leiter", "Eine Kraft im Leiter", "Eine gerichtete Bewegung von Ladungsträgern", "Eine Bremswirkung der Ladungsträger"], correct: 2 },
+
+        { question: "Was ist die treibende Kraft in einem Stromkreis ?", answers: ["Die Leistung P", "Die Ladung Q", "Der Widerstand R", "Die Spannung U"], correct: 3 },
+
+        { question: "Welche Aussagen sind richtig ?", answers: ["Eine Spannung liegt an einem Widerstand an", "Ein Strom liegt an einem Widerstand an", "Ein Strom ließt an einem Widerstand an", "Ein Strom fließt durch einen Widerstand durch"], correct: [0, 3] },
+
+        { question: "Aus welchen drei grundlegenden Elementen besteht ein Stromkreis ?", answers: ["Spannungsquelle", "Leiter", "Leuchte", "Verbraucher"], correct: [0, 1, 3] },
+  
+        { question: "Für welche Spannungsart gilt die Abkürzung AC ?", answers: ["Wechselspannung", "Dreieckspannung", "Gleichspannung", "Rechteckspannung"], correct: 0 },
+
+        { question: "Für welche Spannungsart gilt die Abkürzung DC ?", answers: ["Wechselspannung", "Dreieckspannung", "Gleichspannung", "Rechteckspannung"], correct: 2 },
+
+        { question: "Welchen Formelbuchstaben hat der elektrische Strom ?", answers: ["R", "U", "A", "I"], correct: 3 },
+
+        { question: "Welchen Formelbuchstaben hat die elektrische Spannung ?", answers: ["I", "U", "Ws", "Nm"], correct: 1 },
+
+        { question: "Welchen Formelbuchstaben hat der elektrische Widerstand ?", answers: ["P", "A", "R", "VA"], correct: 2 },
+
+        { question: "Wie bezeichnet man den Widerstand R im Gleichstromkreis ?", answers: ["Gleichstromwiderstand", "Blindwiderstand", "Kaltwiderstand", "Heißwiderstand"], correct: 0 },
+
+        { question: "Wie nennt man den Widerstand R im Wechselstromkreis ?", answers: ["Scheinwiderstand", "Blindwiderstand", "Wirkwiderstand", "Hellwiderstand"], correct: 2 },
+
+        { question: "Welchen Formelbuchstaben hat die elektrische Leistung im Gleichstromkreis ?", answers: ["P", "C", "L", "W"], correct: 0 },
+
+        { question: "Mit welchen Formeln lässt sich die Leistung berechnen ?", answers: ["P = U * I", "P = R / I", "U = R * I", "I = U / R"], correct: 0 },
+
+        { question: "Wie bezeichnet man die Leistung P im Gleichstromkreis ?", answers: ["Widerstandsleistung", "Momentanleistung", "Gleichstromleistung", "Spitzenleistung"], correct: 2 },
+
+        { question: "Welchen Formelbuchstaben hat die elektrische Arbeit ?", answers: ["Nm", "Ws", "W", "F"], correct: 2 },
+
+
+        { question: "Welche Einheit hat die elektrische Spannung ?", answers: ["I", "U", "Ws", "V"], correct: 3 },
+
+
+        { question: "Welche Einheit hat der elektrische Strom ?", answers: ["A", "U", "W", "I"], correct: 0 },
+
+
+        { question: "Wieviel Ampere entsprechen 500 mA ?", answers: ["5", "0,5", "0,05", "50"], correct: 1 },
+
+
+        { question: "Welche Einheit hat der elektrische Widerstand R ?", answers: ["W", "VA", "J", "Ohm"], correct: 3 },
+
+        { question: "Ein Widerstand hat den Wert 1 kOhm. Wie viel Ohm sind das ?", answers: ["0,001", "100", "1000", "0,1"], correct: 2 },
+
+        { question: "Welche Formeln geben das Ohmsche Gesetz wieder ?", answers: ["R = I / U", "U = R / I", "U = R * I", "I = U / R"], correct: [2, 3] },
+
+        { question: "Ein Widerstand von 100 Ohm liegt an 60 V. Wie groß ist der Strom ?", answers: ["6,0 A", "0,6 A", "600 mA", "6 mA"], correct: [1, 2] },
+
+        { question: "Durch einen Widerstand von 150 Ohm fließen 70 mA. Wie groß ist die angelegte Spannung ?", answers: ["1,5 V", "100,5 V", "10,5 V", "10500 mV"], correct: [2, 3] },
+
+        { question: "Wie groß ist R bei 230 V und 5,75 A ?", answers: ["4 Ohm", "40 mOhm", "4 kOhm", "40 Ohm"], correct: 3 },
+
+        { question: "Wie nennt man das Verhältnis zwischen mechanischer zur elektrischen Leistung ?", answers: ["Wirkungsgrad", "Wirtschaftsgrad", "Windungsgrad", "Wellengrad"], correct: 0 },
+
+        { question: "Welche zwei Widerstandsarten gibt es neben dem Wirkwiderstand im Wechselstromkreis noch ?", answers: ["Warmwiderstand", "Blindwiderstand", "Scheinwiderstand", "Reibwiderstand"], correct: [1, 2] },
+
+        { question: "Welche zwei Leistungsarten gibt es neben der Wirkleistung im Wechselstromkreis noch ?", answers: ["Blindleistung", "Nulleistung", "Scheinleistung", "Kaltleistung"], correct: [0, 2] },
+
+        { question: "Welche zwei Bauteile verursachen eine Verschiebung zwischen Strom und Spannung im Wechselstromkreis ?", answers: ["Widerstand R", "Kondensator C", "Potentiometer R", "Spule L"], correct: [1, 3] },
+
+        { question: "Wie wird eine Spule/Wicklung allgemein noch bezeichnet ?", answers: ["Kapazität C", "Ladung Q", "Induktivität L", "Permitivität µ"], correct: 2 },
+
+        { question: "Wie wird ein Kondensator/Ladungsspeicher allgemein noch bezeichnet ?", answers: ["Kapazität C", "Ladung Q", "Induktivität L", "Permittivität µ"], correct: 0 },
+
+        { question: "In welcher Einheit wird die Kapazität C angegeben ?", answers: ["H", "Vs", "F", "As"], correct: 2 },
+
+        { question: "In welcher Einheit wird die Induktivität L angegeben ?", answers: ["H", "Vs", "F", "As"], correct: 0 },
+
+        { question: "Wie muß ein Strommessgerät im Stromkreis eingebaut werden ?", answers: ["In Reihe zum Messobjekt", "Parallel zum Messobjekt", "Egal", "Sowohl in Reihe, als auch parallel zum Messobjekt"], correct: 0 },
+
+        { question: "Wie muß ein Spannungsmessgerät im Stromkreis eingebaut werden ?", answers: ["In Reihe zum Messobjekt", "Parallel zum Messobjekt", "Egal", "Sowohl in Reihe, als auch parallel zum Messobjekt"], correct: 1 },
+
+        { question: "Wie können Widerstände/Verbraucher verschaltet werden ?", answers: ["In Reihenschaltung", "In Parallelschaltung", "In Kombination einer Reihen- und Parallelschaltung", "Nur in Reihen- oder Parallelschaltung"], correct: [0, 1, 2] },
+        { question: "Wie wird die Reihenschaltung noch bezeichnet ?", answers: ["Stromteiler", "Spannungsteiler", "Stromreduzierschaltung", "Spannungsreduzierschaltung"], correct: 1 },
+
+        { question: "Welche Größe ist die gemeinsame Größe in einer Reihenschaltung ?", answers: ["Arbeit W", "Spannung U", "Leistung P", "Strom I"], correct: 3 },
+
+        { question: "Was passiert, wenn mehrere Widerstände in Reihe geschaltet werden ?", answers: ["Der Gesamtwiderstand sinkt", "Bei konstanter Spannung U sinkt der Strom", "Der Gesamtwiderstand ändert sich nicht", "Bei konstanter Spannung steigt der Strom"], correct: 1 },
+
+        { question: "Welche Größe ist die gemeinsame Größe in einer Parallelschaltung ?", answers: ["Spannung U", "Strom I", "Arbeit W", "Leistung P"], correct: 0 },
+
+        { question: "Wie wird die Parallelschaltung noch bezeichnet ?", answers: ["Spannungsreduzierschaltung", "Spannungsteiler", "Stromreduzierschaltung", "Stromteiler"], correct: 3 },
+
+        { question: "Was passiert, wenn mehrere Widerstände parallel geschaltet werden ?", answers: ["Der Gesamtwiderstand R steigt", "Bei konstanter Spannung U sinkt der Strom I", "Der Gesamtwiderstand ändert sich nicht", "Bei konstanter Spannung U steigt der Strom I"], correct: 3 },
+
+        { question: "Welche Aussage ist richtig ?", answers: ["In einer Reihenschaltung ist der Gesamtwiderstand stets kleiner, als der größte Teilwiderstand", "In einer Reihenschaltung fließt durch den kleinsten Teilwiderstand der größte Teilstrom", "In einer Reihenschaltung ist der Gesamtwiderstand stets größer, als der größte Teilwiderstand", "Durch alle Teilwiderstände fließt der gleiche Strom I"], correct: [2, 3] },
+
+        { question: "Welche Aussage ist richtig ?", answers: ["In einer Parallelschaltung steigt der Gesamtwiderstand mit steigender Anzahl an Teilwiderständen", "In einer Parallelschaltung sinkt der Gesamtwiderstand mit kleiner werdenden Anzahl an Teilwiderständen", "In einer Parallelschaltung sinkt der Gesamtwiderstand mit steigender Anzahl an Teilwiderständen", "In einer Parallelschaltung steigt der Gesamtwiderstand mit kleiner werdenden Anzahl an Teilwiderständen"], correct: [2, 3] },
+
+        { question: "Welche Aussage ist falsch ?", answers: ["In einer Parallelschaltung ist der Gesamtwiderstand stets kleiner, als der kleinste Teilwiderstand", "In einer Parallelschaltung fließt durch den größten Teilwiderstand der kleinste Teilstrom", "In einer Parallelschaltung ist der Gesamtwiderstand stets größer, als der kleinste Teilwiderstand", "Alle Teilwiderstände liegen an der  selben Gesamtspannung U"], correct: 2 },
+
+        { question: "Steigt der Widerstandswert eines Leiters, wenn der Querschnitt größer gewählt wird ?", answers: ["Nein, der  Leiterwiderstand wird kleiner", "Ja, der Widerstandswert wird größer", "Wenn der Querschnitt sich nur um eine Stufe vergrößert, ändert sich der Wert nicht", "Wenn der Querschnitt sich nur um eine Stufe verringert, ändert sich der Wert nicht"], correct: 0 },
+
+        { question: "Was passiert mit dem Leiterwiderstand, wenn die Umgebungstemperatur steigt ?", answers: ["Die Umgebungstemperatur hat keinen Einfluss auf den Leiterwiderstand", "Der Leiterwiderstand wird größer", "Die Umgebungstemperatur hat einen Einfluss auf den Leiterwiderstand", "Der Leiterwiderstand wird kleiner"], correct: [1, 2] },
+
+        { question: "Welches Material leitet den Strom am besten ?", answers: ["Aluminium", "Silber", "Kupfer", "Gold"], correct: 1 },
+        { question: "Welche Gefahr besteht bei fehlerhaften Verbindungen ?", answers: ["Der Übergangswiderstand als auch die Temperatur sinken - Brandgefahr!", "Der Übergangswiderstand sinkt und die Temperatur steigt - Brandgefahr!", "Der Übergangswiderstand steigt und die Temperatur sinkt - Brandgefahr!", "Der Übergangswiderstand als auch die Temperatur steigen - Brandgefahr!"], correct: 3 },
+        { question: "Welche Aussage ist richtig?", answers: ["Der Innenwiderstand eines Multimeters ist im V-Bereich kleiner, als im A-Bereich.", "Der Innenwiderstand eines Multimeters ist im V- und A-Bereich unterschiedlich.", "Der Innenwiderstand eines Multimeters ist im V-Bereich größer, als im A-Bereich.", "Der Innenwiderstand eines Multimeters ist im V- und A-Bereich gleich."], correct: [1, 2] },
+        { question: "Wie groß ist der Unterschied zwischen Spitzen- und Effektivwert einer sinusförmigen Wechselspannung ?", answers: ["√3", "√2", "√4", "√5"], correct: 1 },
+
+        { question: "Welche Geräte werden verwendet, um Spannungen zu messen ?", answers: ["Voltmeter", "Strommesser", "Amperemeter", "Spannungsmesser"], correct: [0, 1] },
+
+        { question: "Welche der folgenden Komponenten können als Gleichspannungsquelle dienen ?", answers: ["Batterie", "Solarmodul", "Wechselrichter", "Transformator"], correct: [0, 1] },
+
+        { question: "Welche Eigenschaften beschreiben eine Gleichspannung ?", answers: ["Gleichbleibende Polarität", "Variable Frequenz", "Konstante Höhe", "Wechselnde Stromrichtung"], correct: [0, 2] },
+
+        { question: "Der Spannungsteiler kann verwendet werden, um eine geringere Spannung aus einer höheren Spannung zur Verfügung zu stellen.", answers: ["Richtig", "Falsch"], correct: 0 },
+
+        { question: "Was ändert sich periodisch bei einer Wechselspannung ?", answers: ["Amplitude", "Phase", "Frequenz", "Polarität"], correct: [0, 3] },
+
+        { question: "Welche Einheit gilt für die Frequenz f z.B. bei Wechselspannungen ?", answers: ["Hertz", "Volt", "Ampere", "Ohm"], correct: 0 },
+
+        { question: "Welche Aussagen treffen auf einen Wechselstromgenerator zu ?", answers: ["Wandelt mechanische in elektrische Energie um", "Wandelt elektrische in mechanische Energie um", "Erzeugt Wechselspannung", "Erzeugt Gleichspannung"], correct: [0, 2] },
+
+        { question: "Wie viele Phasen hat ein typisches Drehstromsystem?", answers: ["Eine", "Zwei", "Drei", "Vier"], correct: 2 },
+
+        { question: "Welcher maximale Spannungswert gilt für Niederspannung im AC-Bereich ?", answers: ["230 V", "400 V", "600 V", "1000 V"], correct: 3 },
+
+        { question: "Welche Spannungswerte werden in einem Drehstromsystemen typischerweise im Niederspannungsbereich verwendet?", answers: ["230 V", "400 V", "600 V", "1000 V"], correct: [0, 1] },
+
+        { question: "Welcher maximale Spannungswert gilt für Niederspannung im DC-Bereich ?", answers: ["800 V", "400 V", "600 V", "1,5 kV"], correct: 3 },
+
+        { question: "Drehstrom wird zur Versorgung von leistungsstarken Maschinen verwendet.", answers: ["Richtig", "Falsch"], correct: 0 },
+
+        { question: "Eine weitere Bezeichnung von Drehstrom ist umgangssprachlich Kraftstrom.", answers: ["Richtig", "Falsch"], correct: 0 },
+
+        { question: "Welche Symbole deuten auf ein Drehstromsystem hin ?", answers: ["3~", "Δ und Y", "||", "="], correct: [0, 1] },
+
+        { question: "Welche Größen sind im Ohmschen Gesetz enthalten ?", answers: ["Spannung", "Stromstärke", "Widerstand", "Leistung"], correct: [0, 1, 2] },
+
+        { question: "Was passiert mit dem Strom, wenn die Spannung bei konstantem Widerstand verdoppelt wird ?", answers: ["Er verdoppelt sich", "Er halbiert sich", "Er bleibt gleich", "Er verringert sich auf ein Viertel"], correct: 0 },
+
+        { question: "Was beschreibt der Widerstand in einem elektrischen Stromkreis ?", answers: ["Die Hemmung des Stromflusses", "Die Erhöhung der Spannung", "Die Erhöhung des Stroms", "Die Reduktion der Spannung"], correct: 0 },
+
+        { question: "Welche Formeln beschreiben die elektrische Leistung im Gleichstromkreis ?", answers: ["P = I * U", "P = U / I", "P = I² * R", "P = U² / R"], correct: [0, 2, 3] },
+
+        { question: "Was passiert mit der Leistung, wenn die Spannung bei konstantem Strom verdoppelt wird?", answers: ["Sie verdoppelt sich", "Sie halbiert sich", "Sie bleibt gleich", "Sie vervierfacht sich"], correct: 0 },
+
+        { question: "Welche Auswirkung hat eine Erhöhung des Widerstandes bei konstanter Spannung auf die Leistung ?", answers: ["Die Leistung erhöht sich", "Die Leistung verringert sich", "Die Leistung bleibt gleich", "Die Leistung sinkt auf null"], correct: 1 },
+
+        { question: "Was passiert in einer Reihenschaltung, wenn ein Widerstand unterbrochen wird ?", answers: ["Der gesamte Stromkreis wird unterbrochen", "Der Stromkreis bleibt geschlossen", "Der Strom erhöht sich", "Der Widerstand reduziert sich"], correct: 0 },
+
+        { question: "Was passiert in einer Parallelschaltung, wenn ein Widerstand unterbrochen wird ?", answers: ["Der gesamte Stromkreis wird unterbrochen", "Die anderen Stromkreise laufen weiter", "Der Gesamtstrom des Netzwerkes erhöht sich", "Der Widerstand reduziert sich"], correct: 1 },
+
+        { question: "Welche Zehnerpotenz entspricht dem Präfix \"Milli\"?", answers: ["10^-3", "10^-6", "10^3", "10^6"], correct: 0 },
+        { question: "Welche Zehnerpotenz entspricht dem Präfix \"Kilo\"?", answers: ["10^3", "10^6", "10^-3", "10^-6"], correct: 0 },
+
+        { question: "Wähle die korrekte Umrechnung für 5000 Ω:", answers: ["5 kΩ", "0,5 kΩ", "50 kΩ", "0,005 MΩ"], correct: [0, 3] },
+
+        { question: "Welche der folgenden Werte sind korrekt umgerechnet ?", answers: ["2 kΩ = 2000 Ω", "3 MΩ = 3000 kΩ", "4 kΩ = 4.000.000 mΩ", "0,5 MΩ = 500 kΩ"], correct: [0, 1, 3] },
+
+        { question: "0,02 kΩ sind dasselbe wie 20 Ω.", answers: ["Richtig", "Falsch"], correct: 0 },
+
+        { question: "Wie werden mehrere Steckdosen eines Stromkreises in Haushalten in der Regel verschaltet ?", answers: ["In Reihenschaltung", "In Parallelschaltung", "In Serienschaltung", "In Einzelschaltung"], correct: 1 },
+
+        { question: "In einer Reihenschaltung führt der Ausfall eines Gerätes zum Ausfall aller anderen Geräte in der Schaltung.", answers: ["Richtig", "Falsch"], correct: 0 },
+
+    
+]
 
 };
 
