@@ -42,6 +42,14 @@ const questions = {
             answers: ["Ja. Im Kurzschlussfall löst der Automat sicher aus.", "Nein. Der Fehlerstrom wäre zu niedrig.", "Ja, der Fehlerstrom wäre zu niedrig"], 
             correct: [1] 
         },
+                
+        { 
+            type: "text",
+            question: 'Der Fehlerdifferenznennstrom auf Ihrem RCD ist für 300 mA ausgelegt. Gilt dieser RCD für Personen oder Brandschutz ?', 
+            answers: ["Nur für Personenschutz", "Für Personen- und Brandschutz", "Nur für Brandschutz"], 
+            correct: [2] 
+        },
+        
         { 
             type: "image",
             question: "Welches Symbol gilt für Wechselschalter?", 
@@ -92,7 +100,14 @@ const questions = {
             images: ["Bilder Elektroinstallation/bild25.jpg", "Bilder Elektroinstallation/bild26.jpg", "Bilder Elektroinstallation/bild27.jpg"], 
             correct: [0] 
         },
-
+        
+        { 
+            type: "text",
+            question: "Steigt der Widerstandswert eines Leiters, wenn der Querschnitt größer gewählt wird?", 
+            answers: ["Nein, der Leiterwiderstand wird kleiner.", "Ja, der Widerstandswert wird größer.", "Wenn der Querschnitt sich lediglich um eine Normstufe erhöht, ändert sich faktisch nichts."], 
+            correct: [0] 
+        },
+        
         {
             type: "textWithImage", // Neuer Aufgabentyp
             question: "Welcher Fehler kann hier festgestellt werden?",
@@ -152,8 +167,13 @@ const questions = {
             answers: ["hat bestanden.", "ist durchgefallen."],
             correct: [1] // Index der korrekten Antwort
         },
-
-
+                
+        { 
+            type: "text",
+            question: "Welche Gefahr besteht bei fehlerhaften Verbindungen?", 
+            answers: ["Der Übergangswiderstand sinkt und die Temperatur steigt - Brandgefahr!", "Der Übergangswiderstand als auch die Temperatur sinken - Brandgefahr!", "Der Übergangswiderstand als auch die Temperatur steigen - Brandgefahr!"], 
+            correct: [0] 
+        },
         { 
             type: "image",
             question: "Welches Schaltbild zeigt einen Serienschalter?", 
@@ -198,6 +218,13 @@ const questions = {
             answers: ["hätte bestanden, wenn nicht zu klein ausgeführt.", "wurde zu heiß gewaschen."],
             correct: [0] // Index der korrekten Antwort
         },
+        
+        { 
+            type: "text",
+            question: "Obwohl die Sicherung in Ihrem Unterverteiler (UV) deaktiviert ist, löst der RCD (FI) aus. Warum?", 
+            answers: ["Es besteht eine leitende Verbindung zwischen L und N.", "Der PE hat Kontakt zu N.", "Der N hat Kontakt zu PE"], 
+            correct: [1, 2] 
+        },
 
         {
             type: "textWithImage", // Neuer Aufgabentyp
@@ -236,6 +263,13 @@ const questions = {
             image: "Bilder Elektroinstallation/bild15.jpg", // Bild-URL
             answers: ["ist meisterhaft.", "ist traurig."],
             correct: [1] // Index der korrekten Antwort
+        },
+                
+        { 
+            type: "text",
+            question: "Was ist das Besondere an Schutzklasse 2?", 
+            answers: ["Für SK 2 gilt eine maximale Betriebsspannung von 120 V DC.", "Bei SK 2 muss ein PE angeschlossen werden.", "SK 2 besitzt eine doppelte oder verstärkte Isolierung."], 
+            correct: [2] 
         },
 
         {
