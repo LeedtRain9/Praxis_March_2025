@@ -115,6 +115,13 @@ const questions = {
             answers: ["Nein, der Leiterwiderstand wird kleiner.", "Ja, der Widerstandswert wird größer.", "Wenn der Querschnitt sich lediglich um eine Normstufe erhöht, ändert sich faktisch nichts."], 
             correct: [0] 
         },
+                        
+        { 
+            type: "text",
+            question: 'Beim Einstecken eines Geräts in eine Steckdose löst sofort die Sicherung aus. Was ist die wahrscheinlichste Ursache?', 
+            answers: ["Ein Kurzschluss im Gerät.", "Eine Überlastung des gesamten Stromkreises.", "Eine fehlende Erdung."], 
+            correct: [0] 
+        },
         
         {
             type: "textWithImage", // Neuer Aufgabentyp
@@ -124,6 +131,12 @@ const questions = {
             correct: [1] // Index der korrekten Antwort
         },
         
+        { 
+            type: "text",
+            question: "Ein FI-Schutzschalter löst nur bei eingeschaltetem Licht aus. Was könnte die Ursache sein?", 
+            answers: ["Ein Fehlerstrom über die Lampenfassung.", "Ein defekter Neutralleiter.", "Eine Überlast der Steckdosen."], 
+            correct: [0] 
+        },        
         { 
             type: "text",
             question: 'Welche der drei Sicherheitsregeln sind bei der Instandhaltung einer Schukosteckdose ausreichend?', 
@@ -138,7 +151,14 @@ const questions = {
             answers: ["absolut inakzeptabel.", "super ausgeführt."],
             correct: [1] // Index der korrekten Antwort
         },
-
+                        
+        { 
+            type: "text",
+            question: 'Ein neuer Kreuzschalter funktioniert nicht wie erwartet. Was könnte falsch sein?', 
+            answers: ["Die Korrespondenzleitungen wurden diagonal vertauscht.", "Die Sicherung ist durchgebrannt.", "Der Schalter ist defekt."], 
+            correct: [0, 1] 
+        },
+        
         {
             type: "textWithImage", // Neuer Aufgabentyp
             question: "Welche zwei Mängel liegen vor?",
