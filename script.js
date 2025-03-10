@@ -35,7 +35,13 @@ const questions = {
             answers: ["Es werden eine oder mehrer Lampen geschaltet.", "Es werden eine oder mehrer Lampen unabhängig voneinander geschaltet.", "Beide Schalterwippen müssen in der gleichen Position sein."], 
             correct: [0] 
         },
-
+        
+        { 
+            type: "text",
+            question: 'Ihr Steckdosenstromkreis ist mit einem C 16A-Automaten abgesichert. Der Leiterwiderstand L - N beträgt 2,4 Ohm. Beurteilen Sie die Situation. Ist die Sicherheit noch gegeben?', 
+            answers: ["Ja. Im Kurzschlussfall löst der Automat sicher aus.", "Nein. Der Fehlerstrom wäre zu niedrig.", "Ja, der Fehlerstrom wäre zu niedrig"], 
+            correct: [1] 
+        },
         { 
             type: "image",
             question: "Welches Symbol gilt für Wechselschalter?", 
@@ -49,6 +55,13 @@ const questions = {
             image: "Bilder Elektroinstallation/bild17.jpg", // Bild-URL
             answers: ["Nein. Sonst gibt es einen Kurzschluss.", "Ja, die Funktion bleibt trotzdem erhalten.", "Nein, da sonst zwei Aus-Schaltungen in Reihe liegen würden."],
             correct: [1] // Index der korrekten Antwort
+        },
+                
+        { 
+            type: "text",
+            question: ' Wie viele Kreuzschalter werden benötigt, wenn fünf Schaltstellen vorliegen?', 
+            answers: ["Man benötigt 2 Kreuzschalter und 3 Wechselschalter.", "Es sind 4 Wechselschalter und 1 Kreuzschalter.", "Man benötigt 3 Kreuzschalter und 2 Wechselschalter"], 
+            correct: [2] 
         },
 
         { 
@@ -64,7 +77,6 @@ const questions = {
             answers: ["So kurz wie möglich abschneiden.", "Alle unter eine gemeinsame Klemme.", "Wenn sie keine Spannung führen können, dürfen diese auch ohne Klemme sauber in der Dose gelegt werden."], 
             correct: [2] 
         },
-
 
         {
             type: "textWithImage", // Neuer Aufgabentyp
@@ -87,6 +99,13 @@ const questions = {
             image: "Bilder Elektroinstallation/bild5.jpg", // Bild-URL
             answers: ["Es wurde ein Kabel statt einer Leitung genutzt.", "Die Leiter sind zu kurz.", "Der braune und der blaue Leiter wurden vertauscht."],
             correct: [1] // Index der korrekten Antwort
+        },
+        
+        { 
+            type: "text",
+            question: 'Welche der drei Sicherheitsregeln sind bei der Instandhaltung einer Schukosteckdose ausreichend?', 
+            answers: ["Regeln 1, 2 und 4", "Regeln 2, 4 und 5", "Regeln 1, 2 und 3"], 
+            correct: [2] 
         },
 
         {
