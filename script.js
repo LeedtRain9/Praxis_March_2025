@@ -4,14 +4,14 @@ const questions = {
             type: "text",
             question: 'Wofür steht das "Y" in der Bezeichnung NYM?', 
             answers: ["Die Leiter sind aus PVC.", "Der Mantel ist aus PVC.", "Das 'Y' deutet auf eine Telefonleitung hin."], 
-            correct: [0] 
+            correct: [1] 
         },
 
         { 
             type: "image",
             question: "Wie sollte Ihre Abzweigdose definitiv nicht aussehen?", 
             images: ["Bilder Elektroinstallation/bild1.jpg", "Bilder Elektroinstallation/bild2.jpg", "Bilder Elektroinstallation/bild3.jpg"], 
-            correct: [0, 1] 
+            correct: [1] 
         },
 
         { 
